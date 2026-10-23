@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – CostWatcher</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --link: #0b57d0; --head: #f4f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16171a; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --link: #8ab4f8; --head: #202124; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); }
+  address { font-style: normal; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--line); }
+  th { background: var(--head); }
+  ul { padding-left: 1.3em; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>CostWatcher – Datenschutzerklärung</h1>
+<p class="meta">Stand: 23. Oktober 2026</p>
+
+<p>Diese Erklärung gilt für die Android-App CostWatcher (Paketname app.costwatcher). CostWatcher verarbeitet nur die Daten, die für das gemeinsame Erfassen und Abrechnen von Ausgaben nötig sind. Es gibt keine Werbung, kein Tracking und keine Analyse-Tools.</p>
+
+<h2>1. Verantwortlicher und Kontakt</h2>
+<p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<address>
+Patrick Müller<br>
+Mainzerstr. 5<br>
+67294 Gauersheim, Deutschland<br>
+E-Mail: <a href="mailto:programming@trickm.de">programming@trickm.de</a>
+</address>
+<p>Für alle Fragen zum Datenschutz und zur Ausübung deiner Rechte genügt eine E-Mail an diese Adresse. Ein Datenschutzbeauftragter ist nicht benannt, da keine gesetzliche Pflicht dazu besteht.</p>
+
+<h2>2. Welche Daten verarbeitet werden</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Kategorie</th><th>Daten</th><th>Wo gespeichert</th></tr></thead>
+<tbody>
+<tr><td>Konto</td><td>Google-Konto-ID, E-Mail-Adresse, Anzeigename (bei der Anmeldung mit Google)</td><td>Firebase Authentication, Firestore</td></tr>
+<tr><td>Profil</td><td>Anzeigename, freiwillige Zahlungsinformationen (z. B. PayPal.me-Link oder IBAN), Einstellungen zu Benachrichtigungen</td><td>Firestore</td></tr>
+<tr><td>Gruppen und Projekte</td><td>Gruppennamen, Mitglieder und Rollen, Kategorien, Budgets, Einladungscodes</td><td>Firestore</td></tr>
+<tr><td>Ausgaben und Zahlungen</td><td>Betrag, Währung, Datum, Beschreibung, Notiz, Kategorie, Aufteilung, wiederkehrende Ausgaben, Kommentare, Ausgleichszahlungen</td><td>Firestore und lokal auf dem Gerät</td></tr>
+<tr><td>Belegfotos</td><td>Fotos von Belegen, die du einer Ausgabe hinzufügst (max. 10 MB je Foto)</td><td>Firebase Storage</td></tr>
+<tr><td>Benachrichtigungen</td><td>Geräte-Token für Push-Benachrichtigungen (Firebase Cloud Messaging)</td><td>Firestore</td></tr>
+<tr><td>Missbrauchsschutz</td><td>Zähler für Aufrufe bestimmter Funktionen (z. B. Gruppenbeitritt, Erinnerungen) je Konto</td><td>Firestore, nur serverseitig</td></tr>
+</tbody>
+</table>
+</div>
+<p>Daten in einer Gruppe sehen alle Mitglieder dieser Gruppe. Dazu gehören dein Anzeigename, deine Ausgaben, Kommentare und Zahlungsinformationen. Wer eine Ausgabe einem Projekt zuordnet, macht sie samt Belegfoto auch den Projektmitgliedern sichtbar.</p>
+<p>Wenn du andere Personen als Mitglieder ohne eigenes Konto anlegst, speicherst du deren Namen und Ausgaben. Bitte tu das nur, wenn die Person damit einverstanden ist.</p>
+
+<h2>3. Zwecke und Rechtsgrundlagen</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Zweck</th><th>Rechtsgrundlage</th></tr></thead>
+<tbody>
+<tr><td>Konto anlegen, anmelden, Gruppen und Ausgaben speichern, zwischen Geräten und Mitgliedern synchronisieren, Salden berechnen</td><td>Vertragserfüllung, Art. 6 Abs. 1 lit. b DSGVO</td></tr>
+<tr><td>Push-Benachrichtigungen über neue Ausgaben, Zahlungen und Erinnerungen</td><td>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO (Android-Berechtigung, jederzeit in den Einstellungen widerrufbar)</td></tr>
+<tr><td>Zahlungsinformationen an Gruppenmitglieder weitergeben</td><td>Einwilligung, Art. 6 Abs. 1 lit. a DSGVO (freiwillige Angabe, jederzeit löschbar)</td></tr>
+<tr><td>Schutz vor Missbrauch, z. B. Begrenzung von Beitrittsversuchen und Erinnerungen</td><td>Berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO</td></tr>
+</tbody>
+</table>
+</div>
+<p>Es findet keine automatisierte Entscheidungsfindung und kein Profiling statt. Deine Daten werden nicht verkauft und nicht für Werbung genutzt.</p>
+
+<h2>4. Dienstleister und Empfänger</h2>
+<p>CostWatcher nutzt Google Firebase als Auftragsverarbeiter. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Grundlage ist der Vertrag zur Auftragsverarbeitung von Google (<a href="https://firebase.google.com/support/privacy">Firebase-Datenschutz</a>).</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Dienst</th><th>Zweck</th></tr></thead>
+<tbody>
+<tr><td>Firebase Authentication mit Google Sign-In</td><td>Anmeldung</td></tr>
+<tr><td>Cloud Firestore</td><td>Speicherung und Synchronisierung von Gruppen, Ausgaben und Profil</td></tr>
+<tr><td>Cloud Storage for Firebase</td><td>Speicherung der Belegfotos</td></tr>
+<tr><td>Cloud Functions for Firebase</td><td>Serverfunktionen wie Gruppenbeitritt, Erinnerungen und Kontolöschung, ausgeführt in Frankfurt (europe-west3)</td></tr>
+<tr><td>Firebase Cloud Messaging</td><td>Zustellung von Push-Benachrichtigungen</td></tr>
+</tbody>
+</table>
+</div>
+<p>Die Texterkennung auf Belegfotos (Google ML Kit) läuft vollständig auf deinem Gerät. Die Fotos werden dafür nicht an Google gesendet.</p>
+<p>Google kann Daten auch in Drittländern wie den USA verarbeiten. Dafür gelten der Angemessenheitsbeschluss der EU-Kommission zum EU-U.S. Data Privacy Framework, unter dem Google zertifiziert ist, und ergänzend die EU-Standardvertragsklauseln.</p>
+<p>Andere Empfänger gibt es nur, wenn du selbst etwas teilst, etwa einen Beleg, eine Statistik, eine CSV- oder PDF-Datei oder eine Zahlungsaufforderung über eine andere App. Dafür gelten die Datenschutzbestimmungen der jeweiligen App.</p>
+
+<h2>5. Verarbeitung auf dem Gerät und Berechtigungen</h2>
+<p>CostWatcher speichert eine Kopie deiner Gruppen und Ausgaben in einer lokalen Datenbank, damit die App auch offline funktioniert. Diese Daten sind von der Android-Systemsicherung ausgenommen. Sicherungs-, CSV- und PDF-Dateien entstehen nur, wenn du sie selbst erstellst, und werden dort gespeichert, wo du es auswählst.</p>
+<p>Die App-Sperre nutzt die Entsperrfunktion von Android (Fingerabdruck, Gesicht oder Geräte-PIN). CostWatcher erhält dabei keine biometrischen Daten, nur das Ergebnis der Prüfung.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Berechtigung</th><th>Wofür</th></tr></thead>
+<tbody>
+<tr><td>Internet, Netzwerkstatus</td><td>Synchronisierung mit Firebase</td></tr>
+<tr><td>Benachrichtigungen</td><td>Push-Benachrichtigungen, nur nach deiner Zustimmung</td></tr>
+<tr><td>Kamera</td><td>Einladungs-QR-Codes scannen und Belege fotografieren, nur während du die Funktion nutzt</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>6. Speicherdauer und Kontolöschung</h2>
+<p>Deine Daten werden gespeichert, solange dein Konto besteht. Gelöschte Ausgaben liegen zunächst im Papierkorb der Gruppe und können dort endgültig gelöscht werden.</p>
+<p>Du kannst dein Konto jederzeit in der App unter Profil → Konto löschen löschen. Ohne App geht das per E-Mail an die Adresse in Abschnitt 1 oder über die Seite <a href="delete-account.html">Konto löschen</a>. Bei der Löschung passiert Folgendes:</p>
+<ul>
+<li>Dein Konto, dein Profil, deine Zahlungsinformationen, deine Geräte-Token und deine Kommentare werden gelöscht.</li>
+<li>Gruppen, in denen du allein bist, und deine persönliche Gruppe werden mit allen Ausgaben und Belegfotos gelöscht.</li>
+<li>In Gruppen mit anderen Mitgliedern bleiben die gemeinsamen Ausgaben erhalten, damit die Abrechnung der anderen stimmt. Dein Mitgliedseintrag wird von deinem Konto getrennt und bleibt nur mit dem Namen bestehen, den die Gruppe für dich verwendet hat.</li>
+<li>Aus Projekten wirst du entfernt.</li>
+</ul>
+<p>Die Daten werden sofort aus der Datenbank entfernt. Aus den Sicherungskopien von Google verschwinden sie spätestens nach dem dort geltenden Zyklus, in der Regel innerhalb von 30 Tagen. Die lokale Kopie auf deinem Gerät wird gelöscht, wenn du die App deinstallierst.</p>
+
+<h2>7. Deine Rechte</h2>
+<p>Du hast nach der DSGVO folgende Rechte gegenüber dem Verantwortlichen:</p>
+<ul>
+<li>Auskunft über deine gespeicherten Daten (Art. 15)</li>
+<li>Berichtigung unrichtiger Daten (Art. 16)</li>
+<li>Löschung (Art. 17), direkt in der App oder per E-Mail</li>
+<li>Einschränkung der Verarbeitung (Art. 18)</li>
+<li>Datenübertragbarkeit (Art. 20), z. B. über den CSV-Export und die Sicherung in der App</li>
+<li>Widerspruch gegen Verarbeitungen aufgrund berechtigter Interessen (Art. 21)</li>
+<li>Widerruf einer Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3)</li>
+</ul>
+<p>Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, insbesondere in dem EU-Land, in dem du wohnst. Zuständig für den Verantwortlichen ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz (LfDI).</p>
+
+<h2>8. Kinder und Änderungen</h2>
+<p>CostWatcher richtet sich an Personen ab 18 Jahren. Wir verarbeiten nicht wissentlich Daten von Kindern.</p>
+<p>Wenn sich die App oder die rechtlichen Vorgaben ändern, passen wir diese Erklärung an. Es gilt die jeweils hier veröffentlichte Fassung mit dem Datum oben. Über wesentliche Änderungen informieren wir in der App.</p>
+
+<footer><a href="delete-account.html">Konto löschen</a></footer>
+</main>
+</body>
+</html>
